@@ -1,6 +1,73 @@
-<ul>
-  <li><a routerLink="/accounts/edit/info" routerLinkActive="active">Edit profile</a></li>
-  <li><a routerLink="/accounts/edit/personal" routerLinkActive="active">Edit personal info</a></li>
-  <li><a routerLink="/accounts/listings" routerLinkActive="active">Listings</a></li>
-  <li><a routerLink="/accounts/listings/new" routerLinkActive="active">Add listing</a></li>
-</ul>
+<div class="top-menu">
+
+</div>
+
+<div class="left-menu">
+  <div class="top">
+    <span class="icon-profile"></span>
+    <span class="name-profile">John Smith</span>
+  </div>
+  <div class="center">
+    <ul>
+      <li><a routerLink="/accounts/edit/info" routerLinkActive="active">Edit profile</a></li>
+      <li><a routerLink="/accounts/edit/personal" routerLinkActive="active">Edit personal info</a></li>
+      <li><a routerLink="/accounts/listings" routerLinkActive="active">Listings</a></li>
+      <li><a routerLink="/accounts/listings/new" routerLinkActive="active">Add listing</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="content">
+  <div class="content__inner">
+    <div class="card-box">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center">
+            <h2 class="title">Edit profile</h2>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">First name</label>
+            <input type="text" class="form-element" placeholder="John">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">Last name</label>
+            <input type="text" class="form-element" placeholder="Smith">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">Username</label>
+            <input type="text" class="form-element" placeholder="JohnSmith">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">Email address</label>
+            <input type="email" class="form-element" placeholder="example@mail.com">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">Email address</label>
+            <input type="tel" class="form-element" placeholder="+ 1 234 567 890">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">Both date</label>
+            <input type="text" class="form-element" placeholder="00.00.0000">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <button class="btn btn-blue btn-h40 btn-w200">Update profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
