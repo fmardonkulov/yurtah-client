@@ -12,6 +12,8 @@ import { AddListingComponent } from './pages/add-listing/add-listing.component';
 import { ProfileMainMenuComponent } from './components/profile-main-menu/profile-main-menu.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ProfileContentWrapperComponent } from './components/profile-content-wrapper/profile-content-wrapper.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
 
 const appRoutes: Routes = [
   {
@@ -36,6 +38,14 @@ const appRoutes: Routes = [
       {
         path: 'listings/new',
         component: AddListingComponent,
+      },
+      {
+        path: 'sign-in',
+        component: SignInComponent,
+      },
+      {
+        path: 'sign-up',
+        component: SignUpComponent,
       }
     ]
   }
@@ -52,7 +62,9 @@ const appRoutes: Routes = [
     ListingListComponent,
     AddListingComponent,
     ProfileMainMenuComponent,
-    ProfileContentWrapperComponent
+    ProfileContentWrapperComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
