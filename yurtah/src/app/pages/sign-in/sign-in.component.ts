@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
-  constructor() { }
+  data: object;
+  constructor(
+    private router: Router,
+  ) {
+    this.data = {email: '', password: ''};
+  }
 
   ngOnInit() {
+  }
+  submitForm() {
+    console.log(this.data);
+    if (this.data['email'] !== 'admin@mail.ru' || this.data['password'] !== 'adminadmin') {
+      alert('Неверно введены логин и пароль');
+    } else {
+      sessionStorage.token = 'normas';
+      this.router.navigate(['/accounts/edit/personal']);
+    }
   }
 
 }

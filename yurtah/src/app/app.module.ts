@@ -14,6 +14,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ProfileContentWrapperComponent } from './components/profile-content-wrapper/profile-content-wrapper.component';
 import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { FormsModule } from '@angular/forms';
+import {MainGuard} from './main.guard';
 
 const appRoutes: Routes = [
   {
@@ -25,6 +27,7 @@ const appRoutes: Routes = [
     path: 'accounts',
     children: [
       { path: 'edit',
+        canActivate: [MainGuard],
         children: [
           { path: 'info',
             component: EditInfoComponent },
@@ -33,10 +36,12 @@ const appRoutes: Routes = [
       },
       {
         path: 'listings',
+        canActivate: [MainGuard],
         component: ListingListComponent,
       },
       {
         path: 'listings/new',
+        canActivate: [MainGuard],
         component: AddListingComponent,
       },
       {
@@ -70,8 +75,9 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes, {}),
     AngularFontAwesomeModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [MainGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddListingComponent implements OnInit {
 
+  public data = {
+    videos: [''],
+    images: [''],
+  };
   constructor() { }
 
   ngOnInit() {

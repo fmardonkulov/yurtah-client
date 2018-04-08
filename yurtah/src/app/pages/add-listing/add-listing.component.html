@@ -194,15 +194,15 @@
       <div class="col-6">
         <div class="form-group">
           <label for="" class="form-label">Image</label>
-          <input type="file"><br><br>
-          <button type="button" class="btn btn-success btn-h36 btn-w200">Add another</button>
+          <div *ngFor="let image of data.images"><input type="file"><br><br></div>
+          <button type="button" class="btn btn-success btn-h36 btn-w200" (click)="data.images.push('')">Add another</button>
         </div>
       </div>
       <div class="col-6">
         <div class="form-group">
           <label for="" class="form-label">Video</label>
-          <input type="url"><br><br>
-          <button type="button" class="btn btn-success btn-h36 btn-w200">Add another</button>
+          <div *ngFor="let video of data.videos"><input type="url" [value]="video" /><br><br></div>
+          <button type="button" class="btn btn-success btn-h36 btn-w200" (click)="data.videos.push('')">Add another</button>
         </div>
       </div>
       <div class="col-6"></div>
