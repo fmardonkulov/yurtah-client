@@ -1,0 +1,14 @@
+.table-listings {
+  width: 100%;
+  border: none;
+}
+.table-listings tr {
+  border-bottom: 1px solid #d6e0e7;
+}
+.table-listings th {
+  font-family: 'LatoWebHeavy', sans-serif;
+}
+.table-listings th,
+.table-listings td {
+  padding: 15px 15px 15px 0;
+}
