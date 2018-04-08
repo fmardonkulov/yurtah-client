@@ -77,15 +77,3 @@ ul {
   text-align: center;
 }
 /* end Правила для меню */
-
-/* Правила для контента */
-
-.content {
-  padding: 90px 0 30px 330px;
-}
-.content__inner {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* end Правила для контента */
