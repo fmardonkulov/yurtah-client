@@ -11,6 +11,7 @@ import { ListingListComponent } from './pages/listing-list/listing-list.componen
 import { AddListingComponent } from './pages/add-listing/add-listing.component';
 import { ProfileMainMenuComponent } from './components/profile-main-menu/profile-main-menu.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { ProfileContentWrapperComponent } from './components/profile-content-wrapper/profile-content-wrapper.component';
 
 const appRoutes: Routes = [
   {
@@ -50,7 +51,8 @@ const appRoutes: Routes = [
     EditPersonalInfoComponent,
     ListingListComponent,
     AddListingComponent,
-    ProfileMainMenuComponent
+    ProfileMainMenuComponent,
+    ProfileContentWrapperComponent
   ],
   imports: [
     BrowserModule,
