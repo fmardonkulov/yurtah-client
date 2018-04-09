@@ -22,4 +22,5 @@ describe('ProfileMainMenuComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });

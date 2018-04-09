@@ -12,3 +12,17 @@
   -webkit-background-size: cover;
   background-size: cover;
 }
+@media (max-width: 992px) {
+  .offset-3 {
+    margin-left: 0 !important;
+  }
+  .col-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .card-box .col-6,
+  .card-box .col-12 {
+    padding: 0;
+  }
+}

@@ -12,3 +12,44 @@
 .table-listings td {
   padding: 15px 15px 15px 0;
 }
+
+@media (max-width: 992px){
+  .table-listings thead,
+  .table-listings tbody,
+  .table-listings th,
+  .table-listings td {
+      width: 100% !important;
+      display: block !important;
+      text-align: left !important;
+      padding-left: 0 !important;
+  }
+  .table-listings {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }
+  .table-listings thead {
+    width: 120px !important;
+    border-right: 1px solid #d6e0e7;
+  }
+  .table-listings tbody {
+    width: calc(100% - 120px) !important;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+  }
+  .table-listings tr {
+    width: 200px !important;
+    text-align: left !important;
+    padding-left: 0 !important;
+    border-bottom: none !important;
+  }
+  .table-listings tbody tr {
+    padding-left: 20px !important;
+  }
+}
