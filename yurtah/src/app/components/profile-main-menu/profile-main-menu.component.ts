@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileMainMenuComponent implements OnInit {
 
+  menuTransformed = false;
   constructor() { }
 
   ngOnInit() {
+  }
+  toggleMenu() {
+    this.menuTransformed ? this.menuTransformed = false : this.menuTransformed = true;
   }
 
 }
