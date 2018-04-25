@@ -1,40 +1,59 @@
 <app-profile-main-menu></app-profile-main-menu>
 <app-profile-content-wrapper>
-  <div class="card-box">
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center">
-          <h2 class="title">Edit personal info</h2>
-        </div>
-      </div>
-    </div>
-    <div class="col-6 offset-3">
-      <div class="col-12">
-        <div class="form-group">
-          <label for="" class="form-label">Photo</label>
+  <form action="">
+    <div class="card-box edit-personal">
+      <div class="edit-cover-img">
+        <button type="button" class="change-cover btn btn-white btn-h30 btn-w200">Change cover</button>
+        <div class="photo-profile">
           <div class="show-photo-profile"></div>
-          <input type="file" class="filestyle">
         </div>
-        <div class="form-group">
-          <label for="" class="form-label">Facebook</label>
-          <input type="url" class="form-element" placeholder="https://facebook.com/example">
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">License number</label>
+            <input type="text" class="form-element" placeholder="1 234 567 890">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="" class="form-label">Instagram</label>
-          <input type="url" class="form-element" placeholder="https://instagram.com/example">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">Date of issue of the license</label>
+            <input type="text" class="form-element" placeholder="00.00.0000">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="" class="form-label">Twitter</label>
-          <input type="url" class="form-element" placeholder="https://twitter.com/example">
+        <div class="col-4">
+          <div class="form-group">
+            <label for="" class="form-label">Facebook</label>
+            <input type="url" class="form-element" placeholder="https://facebook.com/example">
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+              <label for="" class="form-label">Instagram</label>
+              <input type="url" class="form-element" placeholder="https://instagram.com/example">
+            </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label for="" class="form-label">Twitter</label>
+            <input type="url" class="form-element" placeholder="https://twitter.com/example">
+          </div>
+        </div>
+        <div class="col-6 offset-3">
+          <div class="form-group">
+            <label for="" class="form-label">Bio</label>
+            <textarea class="form-element" placeholder="Your text"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center">
+            <button class="btn btn-blue btn-h40 btn-w200">Update personal info</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center">
-          <button class="btn btn-blue btn-h40 btn-w200">Update personal info</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  </form>
 </app-profile-content-wrapper>
+

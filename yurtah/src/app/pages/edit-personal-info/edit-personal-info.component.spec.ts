@@ -22,4 +22,5 @@ describe('EditPersonalInfoComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
