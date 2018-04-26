@@ -14,13 +14,50 @@
   -webkit-background-size: cover;
   background-size: cover;
 }
+.change-photo-profile {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: 1px solid #d6e0e7;
+  -webkit-box-shadow: 0 0 4px 0 #d6e0e7;
+  -moz-box-shadow: 0 0 4px 0 #d6e0e7;
+  box-shadow: 0 0 4px 0 #d6e0e7;
+  opacity: .5;
+  cursor: pointer;
+  font-size: 16px;
+}
+.change-photo-profile i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.change-photo-profile:hover {
+  opacity: .8;
+}
 
 .edit-cover-img {
   position: relative;
   height: 220px;
   margin-bottom: 60px;
   border-radius: 6px 6px 0 0;
-  background-image: url("images/hd_wallpaper_15629.jpg");
+  background-color: #d6e0e7;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;

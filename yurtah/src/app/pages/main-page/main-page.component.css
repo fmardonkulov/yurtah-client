@@ -1,0 +1,23 @@
+.main-page_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 50px;
+  z-index: 5;
+}
+.logo-white {
+  display: inline-block;
+  width: 155px;
+  height: 36px;
+  margin-top: 5px;
+  background: url('/assets/images/logo/logo-white.svg') no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.general-screen {
+  height: 100vh;
+  background: url("images/nyc.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}

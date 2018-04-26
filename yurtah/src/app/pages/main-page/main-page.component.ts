@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Element } from '../../applets/dom-events';
+
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +9,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
+
+    // some js styles
+    // height of height element must be 100%
+
+    (() => {
+      const setHeight = () => {
+        const height = window.innerHeight;
+        // document.getElementsByClassName('height')[0].style.height = `${height}px`;
+      };
+
+      let doc = new Element('window');
+
+      doc.resize(setHeight);
+      setHeight();
+    })();
+
+
+
   }
+
+  public static logit(str: string): void {
+    alert(str);
+  };
 
 }

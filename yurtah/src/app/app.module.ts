@@ -16,6 +16,7 @@ import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { FormsModule } from '@angular/forms';
 import {MainGuard} from './main.guard';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 
 const appRoutes: Routes = [
   {
@@ -76,6 +77,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, {}),
     AngularFontAwesomeModule,
     FormsModule,
+    Angular2FontawesomeModule
   ],
   providers: [MainGuard],
   bootstrap: [AppComponent]

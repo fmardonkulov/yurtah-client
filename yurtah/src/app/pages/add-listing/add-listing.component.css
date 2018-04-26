@@ -1,3 +1,67 @@
+.steps-dots {
+  position: relative;
+  max-width: 520px;
+  margin: 40px auto 50px;
+  height: 2px;
+  background-color: #d6e0e7;
+}
+.steps-dots .step-dot_1,
+.steps-dots .step-dot_2,
+.steps-dots .step-dot_3 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #d6e0e7;
+  -webkit-box-shadow: 0 0 4px 1px #d6e0e7;
+  -moz-box-shadow: 0 0 4px 1px #d6e0e7;
+  box-shadow: 0 0 4px 1px #d6e0e7;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  -ms-transition: .35s;
+  -o-transition: .35s;
+  transition: .35s;
+  z-index: 1;
+}
+.steps-dots .step-dot_1 {
+  left: 0;
+}
+.steps-dots .step-dot_2 {
+  left: 50%;
+}
+.steps-dots .step-dot_3 {
+  right: 0;
+}
+.steps-dots .step-dot_1.active,
+.steps-dots .step-dot_2.active,
+.steps-dots .step-dot_3.active {
+  background-color: #0093f3;
+}
+.step-dot_line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #0093f3;
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  -ms-transition: .35s;
+  -o-transition: .35s;
+  transition: .35s;
+  z-index: 0;
+}
+
 @media (max-width: 767px){
   .col-3 {
     -ms-flex: 0 0 50%;

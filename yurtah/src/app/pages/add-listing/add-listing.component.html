@@ -1,214 +1,298 @@
 <app-profile-main-menu></app-profile-main-menu>
 <app-profile-content-wrapper>
+  
+  <!--Step 1-->
+  
   <div class="card-box">
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center">
-          <h2 class="title">Add listings</h2>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="form-group">
-          <label for="" class="form-label">Category</label>
-          <select name="" class="form-element">
-            <option value="">------</option>
-            <option value="">Sale</option>
-            <option value="">Rental</option>
-            <option value="">Sublet</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="form-group">
-          <label for="" class="form-label">Home type</label>
-          <select name="" class="form-element">
-            <option value="">------</option>
-            <option value="">Condominium</option>
-            <option value="">Cooperative (co-op)</option>
-            <option value="">Townhome</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="form-group">
-          <label for="" class="form-label">Type</label>
-          <select name="" class="form-element">
-            <option value="">------</option>
-            <option value="">Exclusive</option>
-            <option value="">Co-Exclusive</option>
-            <option value="">Open</option>
-            <option value="">Co-Broke</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="form-group">
-          <label for="" class="form-label">Address</label>
-          <input type="text" class="form-element">
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="form-group">
-          <label for="" class="form-label">Apartment number</label>
-          <input type="number" class="form-element">
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="form-group">
-          <label for="" class="form-label">Square foot</label>
-          <input type="number" class="form-element" value="0">
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="form-group">
-          <label for="" class="form-label">Price</label>
-          <input type="number" class="form-element" value="0">
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="form-group">
-          <label for="" class="form-label">Monthly taxes</label>
-          <input type="number" class="form-element" value="0">
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="form-group">
-          <label for="" class="form-label">Monthly Common Charges</label>
-          <input type="number" class="form-element" value="0">
-        </div>
-      </div>
-      <div class="col-4">
-          <div class="form-group">
-              <label class="form-label">Beds</label>
-              <input type="number" class="form-element" value="0">
+    <div class="step-top">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center">
+            <h2 class="title">Add listings</h2>
+            <h5 class="title-sm">Step 1</h5>
           </div>
-      </div>
-      <div class="col-4">
-          <div class="form-group">
-              <label class="form-label">Bathrooms</label>
-              <input type="number" class="form-element" value="0">
+        </div>
+        <div class="col-12">
+          <div class="steps-dots">
+            <span class="step-dot_1 active"></span>
+            <span class="step-dot_2"></span>
+            <span class="step-dot_3"></span>
+            <span class="step-dot_line"></span>
           </div>
+        </div>
       </div>
-      <div class="col-4">
+    </div>
+    <div class="step-1">
+      <div class="row">
+        <div class="col-6 offset-3">
           <div class="form-group">
-              <label class="form-label">Rooms</label>
-              <input type="number" class="form-element" value="0">
+            <label for="" class="form-label">Category</label>
+            <select name="" class="form-element">
+              <option value="">------</option>
+              <option value="">Sale</option>
+              <option value="">Rental</option>
+              <option value="">Sublet</option>
+            </select>
           </div>
-      </div>
-      <div class="col-6">
-        <div class="form-group">
-          <label for="" class="form-label">Amenities</label>
-          <select class="form-element">
-            <option value="0">-----</option>
-            <option value="1">Open</option>
-            <option value="2">Fitness Center</option>
-            <option value="3">Elevator</option>
-            <option value="4">Laundry</option>
-            <option value="5">Concierge</option>
-            <option value="6">East</option>
-            <option value="7">West</option>
-            <option value="8">North</option>
-            <option value="9">South</option>
-            <option value="10">In-unit Washer/Dryer</option>
-            <option value="11">Common Storage</option>
-            <option value="12">Private Storage</option>
-            <option value="13">Bicycle Room</option>
-            <option value="14">Excellent</option>
-            <option value="15">Good</option>
-            <option value="16">Could be worse</option>
-            <option value="17">City</option>
-            <option value="18">Garden</option>
-            <option value="19">Park</option>
-            <option value="20">River</option>
-            <option value="21">Skyline</option>
-            <option value="22">River</option>
-            <option value="23">Tree</option>
-            <option value="24">Fireplace</option>
-            <option value="25">Central Air</option>
-            <option value="26">Window A/C</option>
-            <option value="27">Walk in Closets</option>
-            <option value="28">Storage Space</option>
-            <option value="29">Extra Closets</option>
-            <option value="30">Storage Loft</option>
-            <option value="31">Murphy Bed</option>
-            <option value="32">Eat-in</option>
-            <option value="33">Pass-through</option>
-            <option value="34">Pullman</option>
-            <option value="35">Galley</option>
-            <option value="36">Windowed</option>
-            <option value="37">Dishwasher</option>
-            <option value="38">Center Island</option>
-            <option value="39">Modern</option>
-            <option value="40">New Appliances</option>
-            <option value="41">New</option>
-            <option value="42">Good</option>
-            <option value="43">Needs Work</option>
-            <option value="44">Dual Sinks</option>
-            <option value="45">En Suite</option>
-            <option value="46">Heated Floors</option>
-            <option value="47">Marble</option>
-            <option value="48">Tub</option>
-            <option value="49">Standing Shower</option>
-            <option value="50">Private</option>
-            <option value="51">Shared</option>
-            <option value="52">Balcony</option>
-            <option value="53">Juliet Balcony</option>
-            <option value="54">Terrace</option>
-            <option value="55">Garden</option>
-            <option value="56">Deck</option>
-            <option value="57">Patio</option>
-            <option value="58">Green House</option>
-            <option value="59">Rooftop</option>
-            <option value="60">Private Roof Access</option>
-            <option value="61">Roof Rights</option>
-            <option value="62">Doorman</option>
-            <option value="63">Virtual Doorman</option>
-            <option value="64">Video Security</option>
-            <option value="65">Children's Playroom</option>
-            <option value="66">Parking Available</option>
-            <option value="67">Pet Friendly</option>
-            <option value="68">High Ceilings</option>
-            <option value="69">Mint</option>
-            <option value="70">Windows</option>
-          </select>
+        </div>
+        <div class="col-6 offset-3">
+          <div class="form-group">
+            <label for="" class="form-label">Home type</label>
+            <select name="" class="form-element">
+              <option value="">------</option>
+              <option value="">Condominium</option>
+              <option value="">Cooperative (co-op)</option>
+              <option value="">Townhome</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-6 offset-3">
+          <div class="form-group">
+            <label for="" class="form-label">Type</label>
+            <select name="" class="form-element">
+              <option value="">------</option>
+              <option value="">Exclusive</option>
+              <option value="">Co-Exclusive</option>
+              <option value="">Open</option>
+              <option value="">Co-Broke</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <button type="button" class="btn btn-blue btn-h40 btn-w150">Next step</button>
+          </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="form-group">
-          <label for="" class="form-label">Tags</label>
-          <input type="text" class="form-element">
+    </div>
+  </div>
+  
+  <!--Step 2-->
+  
+  <div class="card-box">
+    <div class="step-top">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center">
+            <h2 class="title">Add listings</h2>
+            <h5 class="title-sm">Step 2</h5>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="steps-dots">
+            <span class="step-dot_1 active"></span>
+            <span class="step-dot_2 active"></span>
+            <span class="step-dot_3"></span>
+            <span class="step-dot_line" style="width: 50%"></span>
+          </div>
         </div>
       </div>
-      <div class="col-12">
-        <div class="form-group">
-          <label for="" class="form-label">Description</label>
-          <textarea name="" id="" cols="30" rows="10" class="form-element"></textarea>
+    </div>
+    <div class="step-2">
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">Address</label>
+            <input type="text" class="form-element">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="" class="form-label">Apartment number</label>
+            <input type="number" class="form-element">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="" class="form-label">Square foot</label>
+            <input type="number" class="form-element" value="0">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">Price</label>
+            <input type="number" class="form-element" value="0">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="" class="form-label">Monthly taxes</label>
+            <input type="number" class="form-element" value="0">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="" class="form-label">Monthly Common Charges</label>
+            <input type="number" class="form-element" value="0">
+          </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+                <label class="form-label">Beds</label>
+                <input type="number" class="form-element" value="0">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+                <label class="form-label">Bathrooms</label>
+                <input type="number" class="form-element" value="0">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+                <label class="form-label">Rooms</label>
+                <input type="number" class="form-element" value="0">
+            </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">Amenities</label>
+            <select class="form-element">
+              <option value="0">-----</option>
+              <option value="1">Open</option>
+              <option value="2">Fitness Center</option>
+              <option value="3">Elevator</option>
+              <option value="4">Laundry</option>
+              <option value="5">Concierge</option>
+              <option value="6">East</option>
+              <option value="7">West</option>
+              <option value="8">North</option>
+              <option value="9">South</option>
+              <option value="10">In-unit Washer/Dryer</option>
+              <option value="11">Common Storage</option>
+              <option value="12">Private Storage</option>
+              <option value="13">Bicycle Room</option>
+              <option value="14">Excellent</option>
+              <option value="15">Good</option>
+              <option value="16">Could be worse</option>
+              <option value="17">City</option>
+              <option value="18">Garden</option>
+              <option value="19">Park</option>
+              <option value="20">River</option>
+              <option value="21">Skyline</option>
+              <option value="22">River</option>
+              <option value="23">Tree</option>
+              <option value="24">Fireplace</option>
+              <option value="25">Central Air</option>
+              <option value="26">Window A/C</option>
+              <option value="27">Walk in Closets</option>
+              <option value="28">Storage Space</option>
+              <option value="29">Extra Closets</option>
+              <option value="30">Storage Loft</option>
+              <option value="31">Murphy Bed</option>
+              <option value="32">Eat-in</option>
+              <option value="33">Pass-through</option>
+              <option value="34">Pullman</option>
+              <option value="35">Galley</option>
+              <option value="36">Windowed</option>
+              <option value="37">Dishwasher</option>
+              <option value="38">Center Island</option>
+              <option value="39">Modern</option>
+              <option value="40">New Appliances</option>
+              <option value="41">New</option>
+              <option value="42">Good</option>
+              <option value="43">Needs Work</option>
+              <option value="44">Dual Sinks</option>
+              <option value="45">En Suite</option>
+              <option value="46">Heated Floors</option>
+              <option value="47">Marble</option>
+              <option value="48">Tub</option>
+              <option value="49">Standing Shower</option>
+              <option value="50">Private</option>
+              <option value="51">Shared</option>
+              <option value="52">Balcony</option>
+              <option value="53">Juliet Balcony</option>
+              <option value="54">Terrace</option>
+              <option value="55">Garden</option>
+              <option value="56">Deck</option>
+              <option value="57">Patio</option>
+              <option value="58">Green House</option>
+              <option value="59">Rooftop</option>
+              <option value="60">Private Roof Access</option>
+              <option value="61">Roof Rights</option>
+              <option value="62">Doorman</option>
+              <option value="63">Virtual Doorman</option>
+              <option value="64">Video Security</option>
+              <option value="65">Children's Playroom</option>
+              <option value="66">Parking Available</option>
+              <option value="67">Pet Friendly</option>
+              <option value="68">High Ceilings</option>
+              <option value="69">Mint</option>
+              <option value="70">Windows</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="" class="form-label">Tags</label>
+            <input type="text" class="form-element">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+            <label for="" class="form-label">Description</label>
+            <textarea name="" id="" cols="30" rows="10" class="form-element"></textarea>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+            <label for="" class="form-label">Is published</label>
+            <input type="checkbox" checked="checked">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <button type="button" class="btn btn-white btn-h40 btn-w150 m-r-15">Prev step</button>
+            <button type="button" class="btn btn-blue btn-h40 btn-w150">Next step</button>
+          </div>
         </div>
       </div>
-      <div class="col-12">
-        <div class="form-group">
-          <label for="" class="form-label">Is published</label>
-          <input type="checkbox" checked="checked">
+    </div>
+  </div>
+  
+  <!--Step 3-->
+  
+  <div class="card-box">
+    <div class="step-top">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center">
+            <h2 class="title">Add listings</h2>
+            <h5 class="title-sm">Step 3</h5>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="steps-dots">
+            <span class="step-dot_1 active"></span>
+            <span class="step-dot_2 active"></span>
+            <span class="step-dot_3 active"></span>
+            <span class="step-dot_line" style="width: 100%"></span>
+          </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="form-group">
-          <label for="" class="form-label">Image</label>
-          <div *ngFor="let image of data.images"><input type="file"><br><br></div>
-          <button type="button" class="btn btn-success btn-h36 btn-w200" (click)="data.images.push('')">Add another</button>
+    </div>
+    <div class="step-3">
+      <div class="row">
+        <div class="col-6 offset-3">
+          <div class="form-group">
+            <label for="" class="form-label">Add images</label>
+            <div *ngFor="let image of data.images"><input type="file" multiple><br><br></div>
+          </div>
         </div>
-      </div>
-      <div class="col-6">
-        <div class="form-group">
-          <label for="" class="form-label">Video</label>
-          <div *ngFor="let video of data.videos"><input type="url" [value]="video" /><br><br></div>
-          <button type="button" class="btn btn-success btn-h36 btn-w200" (click)="data.videos.push('')">Add another</button>
+        <div class="col-6 offset-3">
+          <div class="form-group">
+            <label for="" class="form-label">Add videos</label>
+            <div *ngFor="let video of data.videos"><input type="url" [value]="video" class="form-element" placeholder="href"/><br></div>
+            <div class="text-center">
+              <button type="button" class="btn btn-blue btn-h36 btn-w200" (click)="data.videos.push('')">Add another</button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-6"></div>
-      <div class="col-12">
-        <div class="m-t-20 text-center">
-          <button class="btn btn-blue btn-h40 btn-w200">Add listing</button>
+        <div class="col-12">
+          <div class="m-t-20 text-center">
+            <button type="button" class="btn btn-white btn-h40 btn-w150 m-r-15">Prev step</button>
+            <button type="button" class="btn btn-success btn-h40 btn-w150">Save</button>
+          </div>
         </div>
       </div>
     </div>

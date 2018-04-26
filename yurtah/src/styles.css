@@ -1245,6 +1245,22 @@ h6 {
 .checkbox-inverse input[type="checkbox"]:checked + label::after {
   color: #ffffff;
 }
+
+.container {
+  max-width: 1320px !important;
+  padding: 0 50px !important;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
 /* end Общаие правила */
 
 /* Правила для контента */
