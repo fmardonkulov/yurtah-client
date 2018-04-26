@@ -1,0 +1,22 @@
+{
+  "name": "webfonts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "jshint": "^2.9.5"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-path": "0.0.2",
+    "grunt-webfont": "^1.7.1"
+  }
+}

@@ -1289,3 +1289,55 @@ h6 {
 }
 
 /* end Правила для контента */
+
+@font-face {
+	font-family:"Yurtah Icons";
+	src: url('assets/icons/yh-icons.woff') format("woff"), url('assets/icons/yh-icons.ttf') format("truetype"), url('assets/icons/yh-icons.svg') format('svg'), url('assets/icons/yh-icons.woff2') format("woff2");
+	font-weight:normal;
+	font-style:normal;
+}
+
+.yh {
+
+	font-family:"Yurtah Icons";
+
+	display:inline-block;
+	vertical-align:middle;
+	line-height:1;
+	font-weight:normal;
+	font-style:normal;
+	speak:none;
+	text-decoration:inherit;
+	text-transform:none;
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+
+/* Icons */
+
+
+.yh_compas:before {
+	content:"\f101";
+}
+
+
+.yh_food:before {
+	content:"\f102";
+}
+
+
+.yh_marker:before {
+	content:"\f103";
+}
+
+
+.yh_message:before {
+	content:"\f104";
+}
+
+
+.yh_search:before {
+	content:"\f105";
+}
