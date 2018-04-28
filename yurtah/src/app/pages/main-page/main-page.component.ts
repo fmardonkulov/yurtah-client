@@ -32,6 +32,7 @@ export class MainPageComponent implements OnInit {
 
 
 
+
   }
 
   public static logit(str: string): void {
