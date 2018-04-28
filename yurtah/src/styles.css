@@ -169,7 +169,7 @@ html {
     background: #ebeff2;
 }
 body {
-    background: #ebeff2 !important;
+    background: #f7f7f7 !important;
     font: 14px 'LatoWeb', sans-serif !important;
     margin: 0;
     overflow-x: hidden;
@@ -1099,11 +1099,44 @@ h5,
 h6 {
   color: #595d66 !important;
 }
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: #000 !important;
+}
 .title {
     margin-bottom: 20px;
     font: 22px 'RalewayExtraBold', sans-serif;
     text-align: center;
     text-transform: uppercase;
+}
+h2, .h2 {
+  font: 35px 'LatoWebBlack', sans-serif !important;
+  letter-spacing: 1px;
+}
+h3, .h3 {
+  font: 30px 'LatoWebBlack', sans-serif !important;
+  letter-spacing: 1px;
+}
+h4, .h4 {
+  font: 26px 'LatoWebBlack', sans-serif !important;
+  letter-spacing: 0.5px;
+}
+h5, .h5 {
+  font: 18px 'LatoWebBlack', sans-serif !important;
+  letter-spacing: 0.5px;
+}
+
+.title-block {
+  margin-bottom: 25px;
+}
+.title-block i {
+  margin-right: 15px;
+  font-size: 41px;
+  color: #6950AB;
 }
 
 @media (max-width: 767px){
@@ -1247,8 +1280,8 @@ h6 {
 }
 
 .container {
-  max-width: 1320px !important;
-  padding: 0 50px !important;
+  max-width: 1380px !important;
+  padding: 0 30px !important;
 }
 .clearfix::after {
   content: '';
@@ -1328,16 +1361,26 @@ h6 {
 }
 
 
-.yh_marker:before {
+.yh_heart:before {
 	content:"\f103";
 }
 
 
-.yh_message:before {
+.yh_marker:before {
 	content:"\f104";
 }
 
 
-.yh_search:before {
+.yh_message:before {
 	content:"\f105";
+}
+
+
+.yh_search:before {
+	content:"\f106";
+}
+
+
+.yh_share:before {
+	content:"\f107";
 }

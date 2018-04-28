@@ -47,16 +47,26 @@ body {
 }
 
 
-.yh_marker:before {
+.yh_heart:before {
 	content:"\f103";
 }
 
 
-.yh_message:before {
+.yh_marker:before {
 	content:"\f104";
 }
 
 
-.yh_search:before {
+.yh_message:before {
 	content:"\f105";
+}
+
+
+.yh_search:before {
+	content:"\f106";
+}
+
+
+.yh_share:before {
+	content:"\f107";
 }
