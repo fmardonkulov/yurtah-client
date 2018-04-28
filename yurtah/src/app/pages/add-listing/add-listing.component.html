@@ -3,7 +3,7 @@
   
   <!--Step 1-->
   
-  <div class="card-box">
+  <div class="card-box" *ngIf="step===1">
     <div class="step-top">
       <div class="row">
         <div class="col-12">
@@ -27,40 +27,40 @@
         <div class="col-6 offset-3">
           <div class="form-group">
             <label for="" class="form-label">Category</label>
-            <select name="" class="form-element">
+            <select name=""  [(ngModel)]="data.category" class="form-element">
               <option value="">------</option>
-              <option value="">Sale</option>
-              <option value="">Rental</option>
-              <option value="">Sublet</option>
+              <option value="sale">Sale</option>
+              <option value="rental">Rental</option>
+              <option value="sublet">Sublet</option>
             </select>
           </div>
         </div>
         <div class="col-6 offset-3">
           <div class="form-group">
             <label for="" class="form-label">Home type</label>
-            <select name="" class="form-element">
+            <select name=""  [(ngModel)]="data.home_type" class="form-element">
               <option value="">------</option>
-              <option value="">Condominium</option>
-              <option value="">Cooperative (co-op)</option>
-              <option value="">Townhome</option>
+              <option value="1">Condominium</option>
+              <option value="2">Cooperative (co-op)</option>
+              <option value="3">Townhome</option>
             </select>
           </div>
         </div>
         <div class="col-6 offset-3">
           <div class="form-group">
             <label for="" class="form-label">Type</label>
-            <select name="" class="form-element">
+            <select name="" [(ngModel)]="data.type"  class="form-element">
               <option value="">------</option>
-              <option value="">Exclusive</option>
-              <option value="">Co-Exclusive</option>
-              <option value="">Open</option>
-              <option value="">Co-Broke</option>
+              <option value="1">Exclusive</option>
+              <option value="2">Co-Exclusive</option>
+              <option value="3">Open</option>
+              <option value="4">Co-Broke</option>
             </select>
           </div>
         </div>
         <div class="col-12">
           <div class="text-center">
-            <button type="button" class="btn btn-blue btn-h40 btn-w150">Next step</button>
+            <button type="button" class="btn btn-blue btn-h40 btn-w150" (click)="changeStep('next')">Next step</button>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@
   
   <!--Step 2-->
   
-  <div class="card-box">
+  <div class="card-box" *ngIf="step===2">
     <div class="step-top">
       <div class="row">
         <div class="col-12">
@@ -93,61 +93,61 @@
         <div class="col-6">
           <div class="form-group">
             <label for="" class="form-label">Address</label>
-            <input type="text" class="form-element">
+            <input type="text" [(ngModel)]="data.address" class="form-element">
           </div>
         </div>
         <div class="col-3">
           <div class="form-group">
             <label for="" class="form-label">Apartment number</label>
-            <input type="number" class="form-element">
+            <input type="number" [(ngModel)]="data.apartment_number"  class="form-element">
           </div>
         </div>
         <div class="col-3">
           <div class="form-group">
             <label for="" class="form-label">Square foot</label>
-            <input type="number" class="form-element" value="0">
+            <input type="number" [(ngModel)]="data.square_foot"  class="form-element" value="0">
           </div>
         </div>
         <div class="col-6">
           <div class="form-group">
             <label for="" class="form-label">Price</label>
-            <input type="number" class="form-element" value="0">
+            <input type="number" [(ngModel)]="data.price"  class="form-element" value="0">
           </div>
         </div>
         <div class="col-3">
           <div class="form-group">
             <label for="" class="form-label">Monthly taxes</label>
-            <input type="number" class="form-element" value="0">
+            <input type="number" [(ngModel)]="data.taxes"  class="form-element" value="0">
           </div>
         </div>
         <div class="col-3">
           <div class="form-group">
             <label for="" class="form-label">Monthly Common Charges</label>
-            <input type="number" class="form-element" value="0">
+            <input type="number" [(ngModel)]="data.common_charges" class="form-element" value="0">
           </div>
         </div>
         <div class="col-4">
             <div class="form-group">
                 <label class="form-label">Beds</label>
-                <input type="number" class="form-element" value="0">
+                <input type="number" [(ngModel)]="data.beds"  class="form-element" value="0">
             </div>
         </div>
         <div class="col-4">
             <div class="form-group">
                 <label class="form-label">Bathrooms</label>
-                <input type="number" class="form-element" value="0">
+                <input type="number" [(ngModel)]="data.bathrooms"  class="form-element" value="0">
             </div>
         </div>
         <div class="col-4">
             <div class="form-group">
                 <label class="form-label">Rooms</label>
-                <input type="number" class="form-element" value="0">
+                <input type="number" [(ngModel)]="data.rooms"  class="form-element" value="0">
             </div>
         </div>
         <div class="col-6">
           <div class="form-group">
             <label for="" class="form-label">Amenities</label>
-            <select class="form-element">
+            <select class="form-element" [(ngModel)]="data.amenity" >
               <option value="0">-----</option>
               <option value="1">Open</option>
               <option value="2">Fitness Center</option>
@@ -225,25 +225,25 @@
         <div class="col-6">
           <div class="form-group">
             <label for="" class="form-label">Tags</label>
-            <input type="text" class="form-element">
+            <input type="text" class="form-element" [(ngModel)]="data.tags" >
           </div>
         </div>
         <div class="col-12">
           <div class="form-group">
             <label for="" class="form-label">Description</label>
-            <textarea name="" id="" cols="30" rows="10" class="form-element"></textarea>
+            <textarea name="" id="" cols="30" rows="10" class="form-element" [(ngModel)]="data.description" ></textarea>
           </div>
         </div>
         <div class="col-12">
           <div class="form-group">
-            <label for="" class="form-label">Is published</label>
+            <label for="" class="form-label" [(ngModel)]="data.published" >Is published</label>
             <input type="checkbox" checked="checked">
           </div>
         </div>
         <div class="col-12">
           <div class="text-center">
-            <button type="button" class="btn btn-white btn-h40 btn-w150 m-r-15">Prev step</button>
-            <button type="button" class="btn btn-blue btn-h40 btn-w150">Next step</button>
+            <button type="button" class="btn btn-white btn-h40 btn-w150 m-r-15"  (click)="changeStep('prev')">Prev step</button>
+            <button type="button" class="btn btn-blue btn-h40 btn-w150"  (click)="changeStep('next')">Next step</button>
           </div>
         </div>
       </div>
@@ -252,7 +252,7 @@
   
   <!--Step 3-->
   
-  <div class="card-box">
+  <div class="card-box" *ngIf="step===3">
     <div class="step-top">
       <div class="row">
         <div class="col-12">
@@ -290,8 +290,8 @@
         </div>
         <div class="col-12">
           <div class="m-t-20 text-center">
-            <button type="button" class="btn btn-white btn-h40 btn-w150 m-r-15">Prev step</button>
-            <button type="button" class="btn btn-success btn-h40 btn-w150">Save</button>
+            <button type="button" class="btn btn-white btn-h40 btn-w150 m-r-15"  (click)="changeStep('prev')">Prev step</button>
+            <button type="button" class="btn btn-success btn-h40 btn-w150" (click)="submitForm()">Save</button >
           </div>
         </div>
       </div>

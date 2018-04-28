@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -17,46 +18,30 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { FormsModule } from '@angular/forms';
 import {MainGuard} from './main.guard';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
+import { appRoutes } from './routes';
+import { CookieService } from 'ngx-cookie-service';
 
-const appRoutes: Routes = [
-  {
-    path: '',
-    component: MainPageComponent,
-    pathMatch: 'full',
-  },
-  {
-    path: 'accounts',
-    children: [
-      { path: 'edit',
-        canActivate: [MainGuard],
-        children: [
-          { path: 'info',
-            component: EditInfoComponent },
-          { path: 'personal',
-            component: EditPersonalInfoComponent } ],
+import {
+  SocialLoginModule,
+  AuthServiceConfig,
+  GoogleLoginProvider,
+  FacebookLoginProvider,
+} from "angular5-social-login";
+
+export function getAuthServiceConfigs() {
+  return new AuthServiceConfig(
+    [
+      {
+        id: FacebookLoginProvider.PROVIDER_ID,
+        provider: new FacebookLoginProvider("222397305161419")
       },
       {
-        path: 'listings',
-        canActivate: [MainGuard],
-        component: ListingListComponent,
+        id: GoogleLoginProvider.PROVIDER_ID,
+        provider: new GoogleLoginProvider("b5bn9Iizrz5Azzfs8EKH-4gF")
       },
-      {
-        path: 'listings/new',
-        canActivate: [MainGuard],
-        component: AddListingComponent,
-      },
-      {
-        path: 'sign-in',
-        component: SignInComponent,
-      },
-      {
-        path: 'sign-up',
-        component: SignUpComponent,
-      }
     ]
-  }
-];
-
+  );
+}
 
 
 @NgModule({
@@ -77,9 +62,19 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes, {}),
     AngularFontAwesomeModule,
     FormsModule,
-    Angular2FontawesomeModule
+    HttpClientModule,
+    Angular2FontawesomeModule,
+    SocialLoginModule,
   ],
-  providers: [MainGuard],
+  providers: [
+    MainGuard, 
+    HttpClientModule,
+    CookieService,
+    {
+      provide: AuthServiceConfig,
+      useFactory: getAuthServiceConfigs,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

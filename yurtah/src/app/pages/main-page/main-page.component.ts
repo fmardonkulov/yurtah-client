@@ -21,7 +21,7 @@ export class MainPageComponent implements OnInit {
     (() => {
       const setHeight = () => {
         const height = window.innerHeight;
-        document.getElementsByClassName('height')[0].style.height = `${height}px`;
+        document.getElementsByClassName('height')[0]['style'].height = `${height}px`;
       };
 
       let doc = new Element('window');

@@ -19,19 +19,19 @@
       <div class="col-6">
         <div class="form-group">
           <label for="" class="form-label">Email</label>
-          <input type="email" class="form-element" placeholder="example@mail.com">
+          <input [(ngModel)]="user.email" name="email" type="email" class="form-element" placeholder="example@mail.com">
         </div>
       </div>
       <div class="col-6">
         <div class="form-group">
           <label for="" class="form-label">Username</label>
-          <input type="text" class="form-element" placeholder="JohnSmith">
+          <input type="text" name="username" [(ngModel)]="user.username" class="form-element" placeholder="JohnSmith">
         </div>
       </div>
       <div class="col-6">
         <div class="form-group">
           <label for="" class="form-label">Phone number</label>
-          <input type="text" class="form-element" placeholder="+ 1 234 567 890">
+          <input type="text" name="phone" class="form-element" placeholder="+ 1 234 567 890">
         </div>
       </div>
       <div class="col-6">
@@ -43,7 +43,13 @@
       <div class="col-12">
         <div class="form-group">
           <label for="" class="form-label">Password</label>
-          <input type="password" class="form-element" placeholder="******">
+          <input [(ngModel)]="user.password1" name="password1" type="password" class="form-element" placeholder="******">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group">
+          <label for=""  class="form-label">Retype the password, please</label>
+          <input [(ngModel)]="user.password2" name="password2" type="password" class="form-element" placeholder="******">
         </div>
       </div>
       <div class="col-12">
@@ -60,7 +66,7 @@
       </div>
       <div class="col-12">
         <div class="form-group text-center">
-          <button type="submit" class="btn btn-h40 btn-w250 btn-blue">Sign up</button>
+          <button type="submit" (click)="sendData()" class="btn btn-h40 btn-w250 btn-blue">Sign up</button>
         </div>
       </div>
       <div class="col-12">
