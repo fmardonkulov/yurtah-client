@@ -1,3 +1,6 @@
+.main-page {
+  overflow: hidden;
+}
 .main-page_menu {
   position: absolute;
   top: 0;
@@ -276,7 +279,7 @@
 }
 
 .more {
-  display: block;
+  display: inline-block;
   margin-top: 25px;
   font: 20px "LatoWebSemibold", sans-serif;
   text-decoration: underline;
