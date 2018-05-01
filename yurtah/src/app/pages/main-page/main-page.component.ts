@@ -24,7 +24,7 @@ export class MainPageComponent implements OnInit {
         document.getElementsByClassName('height')[0]['style'].height = `${height}px`;
       };
 
-      let doc = new Element('window');
+      const doc = new Element('window');
 
       doc.resize(setHeight);
       setHeight();
@@ -34,9 +34,5 @@ export class MainPageComponent implements OnInit {
 
 
   }
-
-  public static logit(str: string): void {
-    alert(str);
-  };
 
 }

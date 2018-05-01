@@ -24,10 +24,10 @@ export class SignUpComponent implements OnInit {
       password2: '',
       email: '',
       username: '',
-    }
+    };
   }
 
-  user: object;
+  user: any;
 
   ngOnInit() {
   }
@@ -51,15 +51,15 @@ export class SignUpComponent implements OnInit {
 
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-  
+
       console.error(error);
       alert('Введены некорректные данные');
-  
+
       // Let the app keep running by returning an empty result.
       return of(result as T);
     };
   }
 
-  
+
 
 }
