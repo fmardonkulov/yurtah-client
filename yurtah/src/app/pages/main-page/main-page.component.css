@@ -112,13 +112,16 @@
   bottom: 100%;
   left: 0;
   right: 0;
-  margin-bottom: -25px;
+  margin-bottom: -30px;
   text-align: center;
   text-transform: uppercase;
   color: #fff !important;
-  font: 80px 'LatoWebBlack', sans-serif;
+  font: 80px 'AveniNextHeavy', sans-serif;
   letter-spacing: 2.4px;
   z-index: 0;
+}
+.general-screen .image h1>span:nth-child(1) {
+  margin-right: 50px;
 }
 
 .second-screen {
@@ -159,6 +162,10 @@
 }
 .explorer-block h4 a {
   color: #000;
+}
+.explorer-block p {
+  font: 16px 'AveniNextMedium', sans-serif;
+  color: #6a6a6a;
 }
 
 .third-screen {

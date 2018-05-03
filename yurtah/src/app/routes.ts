@@ -1,6 +1,7 @@
 import { AppComponent } from './app.component';
 import {RouterModule, Routes} from '@angular/router';
 import { MainPageComponent } from './pages/main-page/main-page.component';
+import { ListingsPageComponent } from './pages/listings-page/listings-page.component';
 import { EditInfoComponent } from './pages/edit-info/edit-info.component';
 import { EditPersonalInfoComponent } from './pages/edit-personal-info/edit-personal-info.component';
 import { ListingListComponent } from './pages/listing-list/listing-list.component';
@@ -16,6 +17,11 @@ export const appRoutes: Routes = [
     {
       path: '',
       component: MainPageComponent,
+      pathMatch: 'full',
+    },
+    {
+      path: 'listings',
+      component: ListingsPageComponent,
       pathMatch: 'full',
     },
     {

@@ -27,6 +27,7 @@ import {
   GoogleLoginProvider,
   FacebookLoginProvider,
 } from "angular5-social-login";
+import { ListingsPageComponent } from './pages/listings-page/listings-page.component';
 
 export function getAuthServiceConfigs() {
   return new AuthServiceConfig(
@@ -55,7 +56,8 @@ export function getAuthServiceConfigs() {
     ProfileMainMenuComponent,
     ProfileContentWrapperComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    ListingsPageComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +69,7 @@ export function getAuthServiceConfigs() {
     SocialLoginModule,
   ],
   providers: [
-    MainGuard, 
+    MainGuard,
     HttpClientModule,
     CookieService,
     {

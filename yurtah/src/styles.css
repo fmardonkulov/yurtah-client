@@ -161,6 +161,60 @@
     -moz-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
 }
+@font-face {
+    font-family: "AveniNextRegular";
+    src: url("fonts/AveniNext/AvenirNext-Regular-08.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    -o-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+@font-face {
+    font-family: "AveniNextBold";
+    src: url("fonts/AveniNext/AvenirNext-Bold-01.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    -o-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+@font-face {
+    font-family: "AveniNextLight";
+    src: url("fonts/AveniNext/AvenirNext-UltraLight-11.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    -o-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+@font-face {
+    font-family: "AveniNextHeavy";
+    src: url("fonts/AveniNext/AvenirNext-Heavy-09.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    -o-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+@font-face {
+    font-family: "AveniNextDemiBold";
+    src: url("fonts/AveniNext/AvenirNext-DemiBold-03.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    -o-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+@font-face {
+    font-family: "AveniNextMedium";
+    src: url("fonts/AveniNext/AvenirNext-Medium-06.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    -o-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
 
 
 html {
@@ -170,7 +224,7 @@ html {
 }
 body {
     background: #f7f7f7 !important;
-    font: 14px 'LatoWeb', sans-serif !important;
+    font: 14px 'AveniNextRegular', sans-serif !important;
     margin: 0;
     overflow-x: hidden;
     color: #414e5b !important;
@@ -192,7 +246,7 @@ a {
     display: inline-block;
     vertical-align: middle;
     padding: 0 20px !important;
-    font: 12px 'RalewayExtraBold', sans-serif !important;
+    font: 12px 'AveniNextBold', sans-serif !important;
     letter-spacing: 1px;
     text-align: center;
     outline: none !important;
@@ -479,7 +533,7 @@ a {
 }
 .btn-h52 {
     height: 52px;
-    font: 16px 'RalewayExtraBold', sans-serif;
+    font: 16px 'AveniNextBold', sans-serif;
     line-height: 52px;
     letter-spacing: 1px;
 }
@@ -571,7 +625,7 @@ a {
 .form-label {
     display: block;
     margin-bottom: 12px;
-    font-family: 'LatoWebBold', sans-serif;
+    font-family: 'AveniNextBold', sans-serif;
 }
 .form-element {
     display: block;
@@ -625,7 +679,7 @@ textarea.form-element {
 }
 .form-element.h-80 {
     height: 80px;
-    font: 28px 'LatoWebSemibold', sans-serif;
+    font: 28px 'AveniNextDemiBold', sans-serif;
 }
 .form-element.font-16 {
     font: 16px 'LatoWeb', sans-serif;
@@ -971,7 +1025,7 @@ textarea.form-element {
     display: inline-block;
     vertical-align: middle;
     margin-left: 3px;
-    font: 20px 'LatoWebBold', sans-serif;
+    font: 20px 'AveniNextBold', sans-serif;
     letter-spacing: .8px;
     color: #000000;
 }
@@ -1109,24 +1163,24 @@ h6 {
 }
 .title {
     margin-bottom: 20px;
-    font: 22px 'RalewayExtraBold', sans-serif;
+    font: 22px 'AveniNextBold', sans-serif;
     text-align: center;
     text-transform: uppercase;
 }
 h2, .h2 {
-  font: 35px 'LatoWebBlack', sans-serif !important;
+  font: 35px 'AveniNextBold', sans-serif !important;
   letter-spacing: 1px;
 }
 h3, .h3 {
-  font: 30px 'LatoWebBlack', sans-serif !important;
+  font: 30px 'AveniNextBold', sans-serif !important;
   letter-spacing: 1px;
 }
 h4, .h4 {
-  font: 26px 'LatoWebBlack', sans-serif !important;
+  font: 26px 'AveniNextBold', sans-serif !important;
   letter-spacing: 0.5px;
 }
 h5, .h5 {
-  font: 18px 'LatoWebBlack', sans-serif !important;
+  font: 18px 'AveniNextBold', sans-serif !important;
   letter-spacing: 0.5px;
 }
 
@@ -1350,7 +1404,7 @@ footer {
   margin-bottom: 5px;
 }
 .footer-inner ul a {
-  font: 16px 'LatoWebLight', sans-serif;
+  font: 16px 'AveniNextLight', sans-serif;
   color: #6a6a6a !important;
 }
 .footer-bottom {
