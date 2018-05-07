@@ -642,7 +642,8 @@ a {
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
     outline: none;
-    font: 16px 'LatoWeb', sans-serif;
+    font: 16px 'AveniNextDemiBold', sans-serif;
+    letter-spacing: 1.4px;
     background-color: #fff;
     background-image: none;
     -webkit-background-clip: padding-box;
@@ -1149,16 +1150,15 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   color: #595d66 !important;
 }
 .h1,
 .h2,
 .h3,
 .h4,
-.h5,
-.h6 {
+.h5 {
+  margin-bottom: 0 !important;
   color: #000 !important;
 }
 .title {
@@ -1182,6 +1182,13 @@ h4, .h4 {
 h5, .h5 {
   font: 18px 'AveniNextBold', sans-serif !important;
   letter-spacing: 0.5px;
+}
+h6, .h6 {
+  font: 16px 'AveniNextMedium', sans-serif !important;
+  color: #8a8a8a;
+}
+.h6 {
+  margin-bottom: 0 !important;
 }
 
 .title-block {
@@ -1334,8 +1341,8 @@ h5, .h5 {
 }
 
 .container {
-  max-width: 1380px !important;
-  padding: 0 30px !important;
+  max-width: 1440px !important;
+  padding: 0 50px !important;
 }
 .clearfix::after {
   content: '';
@@ -1416,12 +1423,15 @@ footer {
 
 /* Правила для контента */
 
-.content {
+.profile-content {
   padding: 90px 0 30px 330px;
 }
-.content__inner {
+.profile-content__inner {
   max-width: 1100px;
   margin: 0 auto;
+}
+.content {
+  padding-top: 90px;
 }
 
 @media (max-width: 992px){
@@ -1466,54 +1476,131 @@ footer {
 }
 
 
-/* Icons */
+/* Yurtah Icons */
 
 
-.yh_compas:before {
+.yh_arrow-left:before {
 	content:"\f101";
 }
 
 
-.yh_facebook-square:before {
+.yh_arrow-right:before {
 	content:"\f102";
 }
 
 
-.yh_food:before {
+.yh_compas:before {
 	content:"\f103";
 }
 
 
-.yh_heart:before {
+.yh_condominium:before {
 	content:"\f104";
 }
 
 
-.yh_instagram:before {
+.yh_document-sm:before {
 	content:"\f105";
 }
 
 
-.yh_marker:before {
+.yh_document:before {
 	content:"\f106";
 }
 
 
-.yh_message:before {
+.yh_facebook-square:before {
 	content:"\f107";
 }
 
 
-.yh_search:before {
+.yh_food:before {
 	content:"\f108";
 }
 
 
-.yh_share:before {
+.yh_heart:before {
 	content:"\f109";
 }
 
 
-.yh_twitter-square:before {
+.yh_instagram:before {
 	content:"\f10a";
 }
+
+
+.yh_marker:before {
+	content:"\f10b";
+}
+
+
+.yh_message:before {
+	content:"\f10c";
+}
+
+
+.yh_minus:before {
+	content:"\f10d";
+}
+
+
+.yh_multihome:before {
+	content:"\f10e";
+}
+
+
+.yh_plus:before {
+	content:"\f10f";
+}
+
+
+.yh_search:before {
+	content:"\f110";
+}
+
+
+.yh_share:before {
+	content:"\f111";
+}
+
+
+.yh_square-hover:before {
+	content:"\f112";
+}
+
+
+.yh_square:before {
+	content:"\f113";
+}
+
+
+.yh_th-hover:before {
+	content:"\f114";
+}
+
+
+.yh_th-large-hover:before {
+	content:"\f115";
+}
+
+
+.yh_th-large:before {
+	content:"\f116";
+}
+
+
+.yh_th:before {
+	content:"\f117";
+}
+
+
+.yh_townhome:before {
+	content:"\f118";
+}
+
+
+.yh_twitter-square:before {
+	content:"\f119";
+}
+
+

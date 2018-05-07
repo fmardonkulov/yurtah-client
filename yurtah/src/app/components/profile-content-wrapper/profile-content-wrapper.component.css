@@ -1,9 +1,9 @@
 /* Правила для контента */
 
-.content {
+.profile-content {
   padding: 90px 0 30px 330px;
 }
-.content__inner {
+.profile-content__inner {
   max-width: 1100px;
   margin: 0 auto;
 }

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <rect id="a" width="9" height="9" rx="2"/>
+        <rect id="b" width="9" height="9" y="11" rx="2"/>
+        <rect id="c" width="9" height="9" x="11" rx="2"/>
+        <rect id="d" width="9" height="9" x="11" y="11" rx="2"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#D8D8D8" xlink:href="#a"/>
+        <rect width="8" height="8" x=".5" y=".5" stroke="#B4B4B4" rx="2"/>
+        <use fill="#D8D8D8" xlink:href="#b"/>
+        <rect width="8" height="8" x=".5" y="11.5" stroke="#B4B4B4" rx="2"/>
+        <g>
+            <use fill="#D8D8D8" xlink:href="#c"/>
+            <rect width="8" height="8" x="11.5" y=".5" stroke="#B4B4B4" rx="2"/>
+        </g>
+        <g>
+            <use fill="#D8D8D8" xlink:href="#d"/>
+            <rect width="8" height="8" x="11.5" y="11.5" stroke="#B4B4B4" rx="2"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,53 @@
+.filters {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+.filters-ul,
+.sort-ul {
+  margin: 0;
+  padding: 0;
+}
+.filters-ul::after,
+.sort-ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.filters-li,
+.sort-li {
+  float: left;
+  padding: 25px 0 27px;
+}
+.filters-li:not(:last-child),
+.sort-li:not(:last-child) {
+  margin-right: 44px;
+}
+.filters-a {
+  font: 16px 'AveniNextDemiBold', sans-serif;
+  color: #000;
+}
+.sort-a {
+  color: #6a6a6a;
+}
+.sort-a i {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #d8d8d8;
+}
+.sort-a span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2px;
+  font-family: 'AveniNextDemiBold', sans-serif;
+}
+.sort-a:active,
+.sort-a.active {
+  color: #040404;
+}
+.sort-a:hover {
+  color: #000;
+}
+.sort-a:active i,
+.sort-a.active i {
+  color: #b4b4b4;
+}
