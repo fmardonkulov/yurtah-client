@@ -51,3 +51,33 @@
 .sort-a.active i {
   color: #b4b4b4;
 }
+.filters-a.dropdown-toggle::after {
+  display: none;
+}
+.filters-li .dropdown .actions {
+  margin-top: 12px;
+}
+.filters-li .dropdown .actions .btn {
+  text-transform: none;
+  font: 16px 'AveniNextDemiBold', sans-serif;
+  color: #8a8a8a;
+}
+.filters-li.filter .dropdown {
+  min-width: 390px;
+}
+.filters-li.filter .radio label {
+  padding-right: 40px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.filters-li.filter .radio label span {
+  display: block;
+  font-size: 13px;
+}
+.filters-li.filter .radio label i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 33px;
+  color: #533b86;
+}

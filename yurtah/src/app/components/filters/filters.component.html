@@ -2,19 +2,78 @@
   <div class="container">
     <div class="pull-left">
       <ul class="filters-ul">
-        <li class="filters-li"><a href="" class="filters-a">Filter</a></li>
-        <li class="filters-li"><a href="" class="filters-a">Price</a></li>
-        <li class="filters-li"><a href="" class="filters-a">Size</a></li>
-        <li class="filters-li"><a href="" class="filters-a">Type</a></li>
-        <li class="filters-li"><a href="" class="filters-a">#Keywords</a></li>
+        <li class="filters-li filter dropdown-wrap bottom-left" dropdown>
+          <span class="filters-a dropdown-toggle" dropdownToggle>Filter</span>
+          <div class="dropdown" dropdownMenu>
+            <div class="dropdown__inner">
+              <div class="radio radio-purple">
+                <input id="radio-condominium" type="radio" name="filter">
+                <label for="radio-condominium">Condominium <span>Buy a home, share the common space</span> <i class="yh yh_condominium"></i></label>
+              </div>
+              <div class="radio radio-purple">
+                <input id="radio-co-operative" type="radio" name="filter">
+                <label for="radio-co-operative">Co-operative <span>Buy shares of a community</span> <i class="yh yh_document"></i></label>
+              </div>
+              <div class="radio radio-purple">
+                <input id="radio-townhome" type="radio" name="filter">
+                <label for="radio-townhome">Townhome <span>Buy the whole house</span> <i class="yh yh_townhome"></i></label>
+              </div>
+              <div class="radio radio-purple">
+                <input id="radio-multi-famely" type="radio" name="filter">
+                <label for="radio-multi-famely">Multi-famely <span>You get an apartment</span> <i class="yh yh_multihome"></i></label>
+              </div>
+              <div class="actions">
+                <a href="" class="btn btn-white btn-h40 btn-bordered">Cancel</a>
+                <a href="" class="btn btn-white btn-h40 btn-bordered">Apply</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="filters-li dropdown-wrap bottom-left" dropdown>
+          <span class="filters-a dropdown-toggle" dropdownToggle>Price</span>
+          <div class="dropdown" dropdownMenu>
+            <div class="dropdown__inner">
+              <div><a class="neat" href="https://github.com/zurfyx/angular-custom-modal" rel="noopener" target="_blank">Check it out @ GitHub</a></div>
+              <div><a class="neat" href="#">...</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="filters-li dropdown-wrap bottom-left" dropdown>
+          <span class="filters-a dropdown-toggle" dropdownToggle>Size</span>
+          <div class="dropdown" dropdownMenu>
+            <div class="dropdown__inner">
+              <div><a class="neat" href="https://github.com/zurfyx/angular-custom-modal" rel="noopener" target="_blank">Check it out @ GitHub</a></div>
+              <div><a class="neat" href="#">...</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="filters-li dropdown-wrap bottom-left" dropdown>
+          <span class="filters-a dropdown-toggle" dropdownToggle>Type</span>
+          <div class="dropdown" dropdownMenu>
+            <div class="dropdown__inner">
+              <div><a class="neat" href="https://github.com/zurfyx/angular-custom-modal" rel="noopener" target="_blank">Check it out @ GitHub</a></div>
+              <div><a class="neat" href="#">...</a></div>
+            </div>
+          </div>
+        </li>
+        <li class="filters-li dropdown-wrap bottom-center" dropdown>
+          <span class="filters-a dropdown-toggle" dropdownToggle>#Keywords</span>
+          <div class="dropdown" dropdownMenu>
+            <div class="dropdown__inner">
+              <div><a class="neat" href="https://github.com/zurfyx/angular-custom-modal" rel="noopener" target="_blank">Check it out @ GitHub</a></div>
+              <div><a class="neat" href="#">...</a></div>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
     <div class="pull-right">
-      <ul class="sort-ul">
-        <li class="sort-li"><a href="" class="sort-a active"><i class="yh yh_th-large"></i><span>Hide a map</span></a></li>
-        <li class="sort-li"><a href="" class="sort-a"><i class="yh yh_th"></i><span>Map and ads</span></a></li>
-        <li class="sort-li"><a href="" class="sort-a"><i class="yh yh_square"></i><span>Full-screen map</span></a></li>
+      <ul id="sort-ul" class="sort-ul">
+        <li class="sort-li"><a href="javascript:void(0)" class="sort-a active" data-view="sort-null"><i class="yh yh_th-large"></i><span>Hide a map</span></a></li>
+        <li class="sort-li"><a href="javascript:void(0)" class="sort-a" data-view="sort-part"><i class="yh yh_th"></i><span>Map and ads</span></a></li>
+        <li class="sort-li"><a href="javascript:void(0)" class="sort-a" data-view="sort-full"><i class="yh yh_square"></i><span>Full-screen map</span></a></li>
       </ul>
     </div>
   </div>
 </div>
+

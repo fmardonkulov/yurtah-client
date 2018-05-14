@@ -20,4 +20,8 @@ export class Element {
   public hover(callback): void {
     this.getElement().onmouseover = callback;
   }
+
+  public scroll(callback): void {
+    this.getElement().onscroll = callback;
+  }
 }

@@ -15,10 +15,107 @@
     </div>
     <div class="pull-right">
       <ul class="clearfix">
-        <li><a routerLink="/accounts/sign-in">Join</a></li>
+        <li><a routerLink="#" (click)="showSignIn = !showSignIn">Join</a></li>
         <li><a href="">Help</a></li>
-        <li><a routerLink="/accounts/sign-up">Sign up</a></li>
+        <li><a routerLink="#" (click)="showSignUp = !showSignUp">Sign up</a></li>
       </ul>
     </div>
   </div>
 </div>
+<app-dialog [(visible)]="showSignIn">
+	<div class="sign-form">
+    <a href="" (click)="socialSignIn('facebook')" class="btn-facebook"><span class="icon"></span><span>Log in with Facebook</span></a>
+    <a href="" (click)="socialSignIn('google')" class="btn-google"><span class="icon"></span><span>Log in with Google</span></a>
+    <div class="or">or</div>
+    <div class="form-group">
+      <input type="text" placeholder="Your email" [(ngModel)]="data['email']" class="form-element h-54 m-b-10">
+      <input type="password" placeholder="Password" [(ngModel)]="data['password']" class="form-element h-54">
+    </div>
+    <div class="clearfix">
+      <div class="pull-left">
+        <div class="checkbox checkbox-primary">
+          <input id="checkbox0" type="checkbox">
+          <label for="checkbox0">Remember me</label>
+        </div>
+      </div>
+      <div class="pull-right">
+        <a href="" class="text-purple ff-ANM font-16">Forgot password?</a>
+      </div>
+    </div>
+    <div class="m-t-20 text-center">
+      <button type="submit" (click)="submitForm()" class="btn btn-h54 btn-w250 btn-purple">Log in</button>
+    </div>
+  </div>
+</app-dialog>
+
+<app-dialog [(visible)]="showSignUp">
+	<div class="sign-up">
+    <div class="row">
+      <!--<div class="col-6">-->
+        <!--<div class="form-group">-->
+          <!--<label for="" class="form-label">First name</label>-->
+          <!--<input type="text" class="form-element" placeholder="John">-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-6">-->
+        <!--<div class="form-group">-->
+          <!--<label for="" class="form-label">Last name</label>-->
+          <!--<input type="text" class="form-element" placeholder="Smith">-->
+        <!--</div>-->
+      <!--</div>-->
+      <div class="col-12">
+        <div class="form-group">
+          <label for="" class="form-label">Username</label>
+          <input type="text" name="username" [(ngModel)]="user.username" class="form-element" placeholder="JohnSmith">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group">
+          <label for="" class="form-label">Email</label>
+          <input [(ngModel)]="user.email" name="email" type="email" class="form-element" placeholder="example@mail.com">
+        </div>
+      </div>
+      <!--<div class="col-6">-->
+        <!--<div class="form-group">-->
+          <!--<label for="" class="form-label">Phone number</label>-->
+          <!--<input type="text" class="form-element" placeholder="+ 1 234 567 890">-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-6">-->
+        <!--<div class="form-group">-->
+          <!--<label for="" class="form-label">Both date</label>-->
+          <!--<input type="text" class="form-element" placeholder="00.00.0000">-->
+        <!--</div>-->
+      <!--</div>-->
+      <div class="col-12">
+        <div class="form-group">
+          <label for="" class="form-label">Password</label>
+          <input [(ngModel)]="user.password1" name="password1" type="password" class="form-element" placeholder="******">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group">
+          <label for=""  class="form-label">Retype the password, please</label>
+          <input [(ngModel)]="user.password2" name="password2" type="password" class="form-element" placeholder="******">
+        </div>
+      </div>
+      <!--<div class="col-12">-->
+        <!--<div class="form-group">-->
+          <!--<label for="checkbox2" class="form-label">I'm a landlord or industry professional</label>-->
+          <!--<input type="checkbox" id="checkbox2">-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-12">-->
+        <!--<div class="form-group">-->
+          <!--<label for="checkbox3" class="form-label">I'd like to receive marketing and policy communications from Yurtah and its partners.</label>-->
+          <!--<input type="checkbox" id="checkbox3" checked="checked">-->
+        <!--</div>-->
+      <!--</div>-->
+      <div class="col-12">
+        <div class="text-center">
+          <button type="submit" (click)="sendData()" class="btn btn-h54 btn-w250 btn-purple">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-dialog>

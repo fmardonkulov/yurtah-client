@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -13,8 +14,8 @@ import { AddListingComponent } from './pages/add-listing/add-listing.component';
 import { ProfileMainMenuComponent } from './components/profile-main-menu/profile-main-menu.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ProfileContentWrapperComponent } from './components/profile-content-wrapper/profile-content-wrapper.component';
-import { SignInComponent } from './pages/sign-in/sign-in.component';
-import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { FormsModule } from '@angular/forms';
 import {MainGuard} from './main.guard';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
@@ -31,6 +32,9 @@ import { ListingsPageComponent } from './pages/listings-page/listings-page.compo
 import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { FiltersComponent } from './components/filters/filters.component';
+import { ListingsItemComponent } from './components/listings-item/listings-item.component';
+import { DropdownModule } from 'angular-custom-dropdown';
+import { FooterComponent } from './components/footer/footer.component';
 
 export function getAuthServiceConfigs() {
   return new AuthServiceConfig(
@@ -63,7 +67,9 @@ export function getAuthServiceConfigs() {
     ListingsPageComponent,
     MainMenuComponent,
     DialogComponent,
-    FiltersComponent
+    FiltersComponent,
+    ListingsItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -73,6 +79,8 @@ export function getAuthServiceConfigs() {
     HttpClientModule,
     Angular2FontawesomeModule,
     SocialLoginModule,
+    BrowserAnimationsModule,
+    DropdownModule
   ],
   providers: [
     MainGuard,
